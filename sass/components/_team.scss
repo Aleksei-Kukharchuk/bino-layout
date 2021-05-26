@@ -1,0 +1,153 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 150px;
+  padding-bottom: 385px;
+
+  background-image: url("../../images/team/background-overlay.png"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/team/team-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+
+  @media screen and (min-width: 1920px) {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.team_title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-family: "Source Sans Pro";
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+}
+
+.team_text {
+  margin-top: 29px;
+  margin-bottom: 0px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 400;
+  color: $primary-color;
+}
+
+.team .figure {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+.team_list {
+  position: relative;
+}
+
+.team_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 51px;
+  background-color: $accent-color;
+
+  border: 3px solid $accent-color;
+  border-radius: 50%;
+
+  &:hover {
+    transform: scale(1.5);
+
+    & .team_item_image {
+      opacity: 0.25;
+    }
+
+    & .team_item_name,
+    .team_item_employment {
+      opacity: 1;
+    }
+  }
+}
+
+.team_item_image {
+  width: 50px;
+  height: 51px;
+}
+
+.team_item_name {
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  opacity: 0;
+
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: $accent-color;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 55px;
+    left: 23px;
+    width: 1px;
+    height: 30px;
+    background-color: $primary-color;
+  }
+}
+
+.team_item_employment {
+  margin-top: 19px;
+  margin-bottom: 0px;
+  width: 200px;
+
+  text-align: center;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+  opacity: 0;
+}
+
+.team_item {
+  position: absolute;
+
+  &.member_1 {
+    top: 90px;
+    left: -550px;
+  }
+
+  &.member_2 {
+    top: 45px;
+    left: -280px;
+  }
+
+  &.member_3 {
+    top: 40px;
+    left: -5px;
+  }
+
+  &.member_4 {
+    top: 80px;
+    left: 280px;
+  }
+
+  &.member_5 {
+    top: 30px;
+    left: 550px;
+  }
+}

@@ -1,0 +1,76 @@
+.header .container {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+.background {
+  background-image: url("../images/header/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 1920px) {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logo_first_block {
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 12px;
+
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.7);
+
+  background-color: $primary-color;
+}
+
+.logo_second_block {
+  padding-top: 4px;
+  padding-bottom: 2px;
+  padding-left: 9px;
+  padding-right: 10px;
+
+  margin-left: -4px;
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: $primary-color;
+  border: 3px solid $primary-color;
+}
+
+.header_list {
+  display: flex;
+  margin-left: 170px;
+  padding: 0px;
+}
+
+.header_item {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  margin-left: 55px;
+
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+
+    color: $hover-color;
+
+    border-bottom: 2px solid $hover-color;
+  }
+
+  &.is_active {
+    color: $hover-color;
+
+    border-bottom: 2px solid $hover-color;
+  }
+}

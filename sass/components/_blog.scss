@@ -1,0 +1,157 @@
+.blog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog_ankor_logo {
+  position: absolute;
+  top: -35px;
+
+  width: 74px;
+  height: 74px;
+  background-color: rgba(244, 245, 249, 0.25);
+
+  border-radius: 50%;
+}
+
+.ankor_logo {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 64px;
+  height: 64px;
+
+  background-color: $primary-color;
+  background-image: url("../images/blog/ankor.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  border-radius: 50%;
+}
+
+.blog_title {
+  margin-top: 67px;
+  margin-bottom: 0px;
+
+  font-family: "Source Sans Pro";
+  font-size: 36px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px $primary-color;
+  color: $section-title-color;
+}
+
+.blog .figure .line {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  background-color: $second-color;
+  border: 1px solid $second-color;
+}
+
+.blog .figure .circle {
+  margin-top: 25px;
+}
+
+.blog_text {
+  margin-top: 32px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $second-color;
+}
+
+.blog_item_img {
+  max-width: 480px;
+}
+
+.blog_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog_item {
+  display: flex;
+
+  background-color: $accent-color;
+}
+
+.blog_item_text {
+  position: relative;
+  max-width: 431px;
+  padding-left: 49px;
+
+  &_triangle_to_left {
+    position: absolute;
+    top: 50%;
+    left: -26px;
+  }
+
+  &_triangle_to_right {
+    position: absolute;
+    top: 50%;
+    right: -26px;
+    width: 28px;
+  }
+
+  &_category {
+    margin-top: 71px;
+    margin-bottom: 32px;
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+
+  &_title {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 73px;
+
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  &_title::after {
+    content: " ";
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 44px;
+    height: 4px;
+    background-color: $primary-color;
+  }
+
+  &_text {
+    margin-top: 0px;
+    margin-bottom: 55px;
+    margin-right: 51px;
+
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 300;
+  }
+
+  &_link {
+    margin: 0px;
+
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 0.75;
+    font-weight: 600;
+    font-style: italic;
+  }
+}

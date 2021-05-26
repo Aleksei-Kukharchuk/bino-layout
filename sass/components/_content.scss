@@ -1,0 +1,128 @@
+.contact {
+  background-color: $primary-color;
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 149px;
+  padding-bottom: 146px;
+}
+
+.contact_title {
+  margin-top: 0px;
+  margin-bottom: 32px;
+
+  font-family: "Source Sans Pro";
+  font-size: 36px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 0px $primary-color;
+  color: $section-title-color;
+}
+
+.contact_text {
+  margin-top: 0px;
+  margin-bottom: 25px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $second-color;
+}
+
+.contact .figure {
+  margin-top: 0px;
+  margin-bottom: 67px;
+}
+
+.contact_wrapper {
+  display: flex;
+}
+
+.contact_info_wrapper {
+  padding-top: 49px;
+  padding-left: 91px;
+  padding-right: 125px;
+
+  margin-right: 28px;
+
+  background-color: $primary-color;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact_info_title {
+  margin-top: 0px;
+  margin-bottom: 28px;
+
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.contact_info {
+  margin-top: 0px;
+  margin-bottom: 70px;
+
+  font-family: "Open Sans";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $second-color;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 33px;
+  padding-bottom: 97px;
+  padding-left: 91px;
+  padding-right: 100px;
+
+  background-color: $primary-color;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form_label {
+  position: relative;
+}
+
+.contact_form_input {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 29px;
+
+  width: 464px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $second-color;
+
+  border: none;
+  border-bottom: 1px solid $second-color;
+}
+
+.contact_form_button {
+  width: 157px;
+  height: 44px;
+  background-color: $accent-color;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $primary-color;
+
+  border: none;
+}

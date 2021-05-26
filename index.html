@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bino</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Sans+Pro&display=swap"
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 <body>
-    <div class="background">
+    <div class="background overlay">
         <header class="header">
             <div class='container'>
                 <div class='logo'>
@@ -21,7 +24,7 @@
                 </div>
                 <nav>
                     <ul class="header_list">
-                        <li class="header_item">HOME</li>
+                        <li class="header_item is_active">HOME</li>
                         <li class="header_item">ABOUT US</li>
                         <li class="header_item">PORTFOLIO</li>
                         <li class="header_item">PRICING</li>
@@ -52,6 +55,9 @@
                 <button class="hero_button">GET STARTED NOW</button>
                 <button class="hero_button">LEARN MORE</button>
             </div>
+            <div class="hero_slider_arrow">
+                <img src="./images/header/fa_angle_left.png" alt="arrow">
+            </div>
         </section>
     </div>
     <section class="blog">
@@ -65,13 +71,284 @@
             <div class="circle"></div>
             <div class="line"></div>
         </div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="blog_list">
+            <li class="blog_item">
+                <img src="./images/blog/gallery/coffee.jpg" alt="coffee" class="blog_item_img"/>
+                <div class="blog_item_text">
+                    <img src="./images/blog/triangle-to-left.png" alt="triangle" class="blog_item_text_triangle_to_left">
+                    <p class="blog_item_text_category">art / t-shirt</p>
+                    <h2 class="blog_item_text_title">T-SHIRT DESIGN</h2>
+                    <p class="blog_item_text_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the indu Stry's
+                        standard
+                        dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+                        book.</p>
+                    <p class="blog_item_text_link">Read More >></p>
+                </div>
+            </li>
+            <li class="blog_item">
+                <img src="./images/blog/gallery/clock.jpg" alt="clock" class="blog_item_img"/>
+                <div class="blog_item_text">
+                    <img src="./images/blog/triangle-to-left.png" alt="triangle" class="blog_item_text_triangle_to_left">
+                    <p class="blog_item_text_category">art / t-shirt</p>
+                    <h2 class="blog_item_text_title">T-SHIRT DESIGN</h2>
+                    <p class="blog_item_text_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the indu Stry's
+                        standard
+                        dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+                        book.</p>
+                    <p class="blog_item_text_link">Read More >></p>
+                </div>
+            </li>
+            <li class="blog_item">
+                <div class="blog_item_text">
+                    <img src="./images/blog/triangle-to-right.png" alt="triangle" class="blog_item_text_triangle_to_right">
+                    <p class="blog_item_text_category">art / t-shirt</p>
+                    <h2 class="blog_item_text_title">T-SHIRT DESIGN</h2>
+                    <p class="blog_item_text_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's
+                        standard
+                        dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+                        book.</p>
+                        <p class="blog_item_text_link">Read More >></p>
+                    </div>
+                    <img src="./images/blog/gallery/road.jpg" alt="road" class="blog_item_img"/>
+            </li>
+            <li class="blog_item">
+                <div class="blog_item_text">
+                    <img src="./images/blog/triangle-to-right.png" alt="triangle" class="blog_item_text_triangle_to_right">
+                    <p class="blog_item_text_category">art / t-shirt</p>
+                    <h2 class="blog_item_text_title">T-SHIRT DESIGN</h2>
+                    <p class="blog_item_text_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has been the indu Stry's
+                        standard
+                        dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen
+                        book.</p>
+                        <p class="blog_item_text_link">Read More >></p>
+                    </div>
+                    <img src="./images/blog/gallery/car.jpg" alt="car" class="blog_item_img"/>
+                </li>
         </ul>
     </section>
-    <footer></footer>
+    <section class="stats">
+        <div class="container">
+            <ul class="stats_list">
+                <li class="stats_item">
+                    <div class="stats_img_wrapper">
+                        <img src="./images/stats/heart.png" alt="heart" class="stats_img">
+                    </div>
+                    <h2 class="stats_quantity">3891</h2>
+                    <h3 class="stats_name">User Favourites</h3>
+                </li>
+                <li class="stats_item">
+                    <div class="stats_img_wrapper">
+                        <img src="./images/stats/label.png" alt="label" class="stats_img">
+                    </div>
+                    <h2 class="stats_quantity">281K</h2>
+                    <h3 class="stats_name">Posts Last 24 Hours</h3>
+                </li>
+                <li class="stats_item">
+                    <div class="stats_img_wrapper">
+                        <img src="./images/stats/like.png" alt="like" class="stats_img">
+                    </div>
+                    <h2 class="stats_quantity">918</h2>
+                    <h3 class="stats_name">Total Posts</h3>
+                </li>
+                <li class="stats_item">
+                    <div class="stats_img_wrapper">
+                        <img src="./images/stats/star.png" alt="star" class="stats_img">
+                    </div>
+                    <h2 class="stats_quantity">178</h2>
+                    <h3 class="stats_name">Total Posts</h3>
+                </li>
+                <li class="stats_item">
+                    <div class="stats_img_wrapper">
+                        <img src="./images/stats/flag.png" alt="flag" class="stats_img">
+                    </div>
+                    <h2 class="stats_quantity">285</h2>
+                    <h3 class="stats_name">Amazing Features</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="pricing">
+        <div class="container">
+            <h1 class="pricing_title">OUR PRICING</h1>
+            <h2 class="pricing_text">A 30 days free trial for all. A brief story about how this process works, keep an eye till the end.</h2>
+            <div class="figure">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+                <ul class="pricing_list">
+                    <li class="pricing_item">
+                        <h2 class="pricing_item_title">STARTER</h2>
+                        <div class="pricing_price_wrapper">
+                            <div class="pricing_price_circle">
+                                <h2 class="pricing_price">$19</h2>
+                                <p class="pricing_cost">per mounth</p>
+                            </div>
+                        </div>
+                        <p class="pricing_item_text">
+                        Competition Analysis Methods
+                        </br> All Ranked URLs
+                        </br> International Support System
+                        </br> Social Media Tracking
+                        </p>
+                        <button class="pricing_item_button">Choose plan</button>
+                    </li>
+                    <li class="pricing_item">
+                        <h2 class="pricing_item_title">PREMIUM</h2>
+                        <div class="pricing_price_wrapper">
+                            <div class="pricing_price_circle">
+                                <h2 class="pricing_price">$39</h2>
+                                <p class="pricing_cost">per mounth</p>
+                            </div>
+                        </div>
+                        <p class="pricing_item_text">
+                        Competition Analysis Methods
+                        </br> All Ranked URLs
+                        </br> International Support System
+                        </br> Social Media Tracking
+                        </p>
+                        <button class="pricing_item_button">Choose plan</button>
+                    </li>
+                    <li class="pricing_item">
+                        <h2 class="pricing_item_title">BUSINESS</h2>
+                        <div class="pricing_price_wrapper">
+                            <div class="pricing_price_circle">
+                                <h2 class="pricing_price">$99</h2>
+                                <p class="pricing_cost">per mounth</p>
+                            </div>
+                        </div>
+                        <p class="pricing_item_text">
+                        Competition Analysis Methods
+                        </br> All Ranked URLs
+                        </br> International Support System
+                        </br> Social Media Tracking
+                        </p>
+                        <button class="pricing_item_button">Choose plan</button>
+                    </li>
+                </ul>
+        </div>
+    </section>
+    <section class="team">
+        <h1 class="team_title">OUR TEAM</h1>
+        <h2 class="team_text">Meet the craziest team. Share your thoughts with them.</h2>
+        <div class="figure">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="team_list">
+            <li class="team_item member_1">
+                <img src="./images/team/member-1.png" alt="member-1" class="team_item_image">
+                <h2 class="team_item_name">Kazi Erfan</h2>
+                <p class="team_item_employment">UI/UX Designer</p>
+            </li>
+            <li class="team_item member_2">
+                <img src="./images/team/member-2.png" alt="member-2" class="team_item_image">
+                <h2 class="team_item_name">Kazi Erfan</h2>
+                <p class="team_item_employment">UI/UX Designer</p>
+            </li>
+            <li class="team_item member_3">
+                <img src="./images/team/member-3.png" alt="member-3" class="team_item_image">
+                <h2 class="team_item_name">Kazi Erfan</h2>
+                <p class="team_item_employment">UI/UX Designer</p>
+            </li>
+            <li class="team_item member_4">
+                <img src="./images/team/member-4.png" alt="member-4" class="team_item_image">
+                <h2 class="team_item_name">Kazi Erfan</h2>
+                <p class="team_item_employment">UI/UX Designer</p>
+            </li>
+            <li class="team_item member_5">
+                <img src="./images/team/member-5.png" alt="member-5" class="team_item_image">
+                <h2 class="team_item_name">Kazi Erfan</h2>
+                <p class="team_item_employment">UI/UX Designer</p>
+            </li>
+        </ul>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h1 class="contact_title">KEEP IN TOUCH</h1>
+            <h2 class="contact_text">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna suscipit, dictum quam nec.</h2>
+            <div class="figure">
+                <div class="line"></div>
+                <div class="circle"></div>
+                <div class="line"></div>
+            </div>
+            <div class="contact_wrapper">
+                <div class="contact_info_wrapper">
+                    <h2 class="contact_info_title">Our adress</h2>
+                    <p class="contact_info">House #13, Streat road, Sydney <br />2310 Australia</p>
+                    <h2 class="contact_info_title">Call us</h2>
+                    <p class="contact_info">+ 880 168 109 1425 <br/> + 0216809142</p>
+                    <h2 class="contact_info_title">Email us</h2>
+                    <p class="contact_info">contactus@email.com</p>
+                </div>
+                <form type="submit" class="contact_form">
+                    <label class="contact_form_label">
+                        <input type="text" name='name' placeholder="Name" class="contact_form_input">
+                    </label>
+                    <label class="contact_form_label">
+                        <input type="email" name='email' placeholder="Email" class="contact_form_input">
+                    </label>
+                    <label class="contact_form_label">
+                        <input type="text" name='subject' placeholder="Subject" class="contact_form_input">
+                    </label>
+                    <label class="contact_form_label">
+                        <textarea name="Message" cols="300" rows="5" placeholder="Message" class="contact_form_input"></textarea>
+                    </label>
+                    <button type="submit" class="contact_form_button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <ul class="social_media_list">
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-rss"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-google-plus"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-linkedin2"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-skype"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-vimeo"></use>
+                    </svg>
+                </li>
+                <li class="social_media_item">
+                    <svg class="svg">
+                        <use href="./images/social-media/symbol-defs.svg#icon-tumblr"></use>
+                    </svg>
+                </li>
+            </ul>
+            <span class="copyright">Kazi Erfan © All Rights Reserved</span>
+        </div>
+    </footer>
 </body>
 </html>

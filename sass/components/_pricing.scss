@@ -1,0 +1,170 @@
+.pricing .container {
+  padding-top: 156px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing_title {
+  margin: 0px;
+  font-family: "Source Sans Pro";
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: $section-title-color;
+}
+
+.pricing_text {
+  margin-top: 29px;
+  margin-bottom: 0px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 400;
+  color: $second-color;
+}
+
+.pricing .figure {
+  margin-top: 28px;
+  margin-bottom: 0px;
+}
+
+.pricing_list {
+  margin-top: 70px;
+  margin-bottom: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.pricing_item {
+  position: relative;
+  background-color: $second-color;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:hover {
+    background-color: $accent-color;
+
+    .pricing_price {
+      color: $accent-color;
+    }
+
+    .pricing_item_button {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.pricing_item_title {
+  margin: 0px;
+  padding-top: 50px;
+  padding-bottom: 136px;
+  padding-left: 133px;
+  padding-right: 133px;
+
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  color: $primary-color;
+}
+
+.pricing_price_wrapper {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 174px;
+  height: 172px;
+  background-color: rgba(244, 245, 249, 0.25);
+  border-radius: 50%;
+}
+
+.pricing_price_circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 153px;
+  height: 152px;
+  background-color: $primary-color;
+  border-radius: 50%;
+}
+
+.pricing_price {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+
+  font-family: "Source Sans Pro";
+  font-size: 39.6px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $second-color;
+}
+
+.pricing_cost {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+
+  font-family: "Source Sans Pro";
+  font-size: 13.2px;
+  line-height: 21px;
+  font-weight: 700;
+  color: $second-color;
+}
+
+.pricing_item_text {
+  width: 100%;
+  margin: 0px;
+  padding-top: 125px;
+  padding-bottom: 144px;
+
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 600;
+  color: $second-color;
+
+  background-color: $primary-color;
+}
+
+.pricing_item_button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: $primary-color;
+
+  width: 145px;
+  height: 46px;
+  background-color: $second-color;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+  border: none;
+}
