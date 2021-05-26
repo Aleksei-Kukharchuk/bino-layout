@@ -4,9 +4,10 @@
 }
 
 .stats {
-  background-image: url("../../images/stats/stats-background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/stats/stats-background.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
 
   @media screen and (min-width: 1920px) {
     width: 1920px;
